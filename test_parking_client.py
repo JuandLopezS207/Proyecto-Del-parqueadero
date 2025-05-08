@@ -16,7 +16,7 @@ print(parking_client.registerUser(url,id,password,program,role))
 # Solicita un código QR al servidor (los códigos QR cambian cada fecha o cuando se reinicia el servidor)
 imgBytes=parking_client.getQR(url,id,password)
 # Obtiene un código QR y lo visualiza
-imgBytes = parking_client.getQR(url, id, password)
+
 image = Image.open(io.BytesIO(imgBytes))
 image.show()
 
